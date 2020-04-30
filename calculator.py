@@ -12,7 +12,6 @@ while True:
         break
     result = None
     if toke_calculation[0] == "+":
-
         result = add(int(toke_calculation[1]), int(toke_calculation[2]))
     elif toke_calculation[0] == "-":
         result = subtract(int(toke_calculation[1]), int(toke_calculation[2]))
@@ -20,4 +19,12 @@ while True:
         result = multiply(int(toke_calculation[1]), int(toke_calculation[2]))
     elif toke_calculation[0] == "/":
         result = divide(int(toke_calculation[1]), int(toke_calculation[2]))
+    elif toke_calculation[0] == "square":
+        result = square(int(toke_calculation[1]))
+    elif toke_calculation[0] == "cube":
+        result = cube(int(toke_calculation[1]))
+    elif toke_calculation[0] == "power":
+        result = power(int(toke_calculation[1]), int(toke_calculation[2]))
+    elif toke_calculation[0] == "mod":
+        result = mod(int(toke_calculation[1]), int(toke_calculation[2]))
     print(result)
